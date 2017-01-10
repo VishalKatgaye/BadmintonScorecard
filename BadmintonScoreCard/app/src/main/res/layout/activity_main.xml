@@ -14,27 +14,27 @@
         android:layout_centerHorizontal="true"
         android:background="@color/dark_gray"
         android:fontFamily="cursive"
-        android:text="Badminton Singles Knokout "
+        android:text="@string/title"
         android:textAlignment="center"
         android:textColor="@color/red"
-        android:textSize="32sp"
+        android:textSize="@dimen/big_head_scale"
         android:textStyle="bold" />
 
     <LinearLayout
         android:id="@+id/parent_frame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="@dimen/default_dim"
+        android:layout_marginRight="@dimen/default_dim"
+        android:layout_marginTop="@dimen/high_dim"
         android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/no_dim"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/default_dim"
+            android:layout_marginRight="@dimen/low_dim"
+            android:layout_marginTop="@dimen/low_dim"
             android:layout_weight="1"
             android:background="@color/green"
             android:orientation="vertical">
@@ -44,60 +44,60 @@
                 android:layout_height="wrap_content"
                 android:background="@color/blue"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Player A"
+                android:text="@string/first_player"
                 android:textAlignment="center"
                 android:textColor="@color/yellow"
-                android:textSize="24sp" />
+                android:textSize="@dimen/head_scale" />
 
             <TextView
                 android:id="@+id/scoreCountA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
-                android:text="0"
+                android:layout_marginBottom="@dimen/low_dim"
+                android:layout_marginTop="@dimen/low_dim"
+                android:text="@string/initial_score"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="32sp" />
+                android:textSize="@dimen/big_head_scale" />
 
             <TextView
                 android:id="@+id/resultCountA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="-"
+                android:text="@string/no_result"
                 android:textAlignment="center"
                 android:textColor="@color/red"
-                android:textSize="24sp" />
+                android:textSize="@dimen/head_scale" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/low_dim"
+                android:layout_marginLeft="@dimen/default_dim"
+                android:layout_marginRight="@dimen/default_dim"
                 android:onClick="setPlayerAPointer"
-                android:text="+1 Point"
+                android:text="@string/score"
                 android:textColor="@color/colorPrimaryDark" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/default_dim"
+                android:layout_marginLeft="@dimen/default_dim"
+                android:layout_marginRight="@dimen/default_dim"
+                android:layout_marginTop="@dimen/low_dim"
                 android:onClick="awayScoreA"
-                android:text="Away Point"
+                android:text="@string/away"
                 android:textColor="@color/colorPrimaryDark" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/no_dim"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/default_dim"
+            android:layout_marginRight="@dimen/low_dim"
+            android:layout_marginTop="@dimen/low_dim"
             android:layout_weight="1"
             android:background="@color/green"
             android:orientation="vertical">
@@ -107,10 +107,10 @@
                 android:layout_height="wrap_content"
                 android:background="@color/blue"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Player B"
+                android:text="@string/second_player"
                 android:textAlignment="center"
                 android:textColor="@color/yellow"
-                android:textSize="24sp" />
+                android:textSize="@dimen/head_scale" />
 
             <TextView
                 android:id="@+id/scoreCountB"
@@ -118,40 +118,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:text="0"
+                android:text="@string/initial_score"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="32sp" />
+                android:textSize="@dimen/big_head_scale" />
 
             <TextView
                 android:id="@+id/resultCountB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="-"
+                android:layout_marginBottom="@dimen/low_dim"
+                android:text="@string/no_result"
                 android:textAlignment="center"
                 android:textColor="@color/red"
-                android:textSize="24sp" />
+                android:textSize="@dimen/head_scale" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="@dimen/low_dim"
+                android:layout_marginLeft="@dimen/default_dim"
+                android:layout_marginRight="@dimen/default_dim"
                 android:onClick="setPlayerBPointer"
-                android:text="+1 Point"
+                android:text="@string/score"
                 android:textColor="@color/colorPrimaryDark" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/default_dim"
+                android:layout_marginLeft="@dimen/default_dim"
+                android:layout_marginRight="@dimen/default_dim"
+                android:layout_marginTop="@dimen/low_dim"
                 android:onClick="awayScoreB"
-                android:text="Away Point"
+                android:text="@string/away"
                 android:textColor="@color/colorPrimaryDark" />
         </LinearLayout>
     </LinearLayout>
@@ -165,9 +165,9 @@
         android:layout_marginTop="16dp"
         android:background="@color/dark_gray"
         android:onClick="reset"
-        android:text="reset"
+        android:text="@string/reset"
         android:textColor="@color/red"
-        android:textSize="16sp" />
+        android:textSize="@dimen/default_scale" />
 
     <TextView
         android:layout_width="match_parent"
@@ -175,10 +175,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="96dp"
-        android:text="Instructions: "
+        android:text="@string/instruction_head"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="@dimen/head_scale"
         android:textStyle="bold" />
 
     <TextView
@@ -189,9 +189,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
-        android:text="1.  First player with 11 points Win."
+        android:text="@string/instruction1"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="@dimen/default_scale"
         android:textStyle="bold" />
 
     <TextView
@@ -202,9 +202,9 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
-        android:text="2.  When 10 all, need 2 consecutive points to win."
+        android:text="@string/instruction2"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="@dimen/default_scale"
         android:textStyle="bold" />
 
     <TextView
@@ -215,9 +215,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="4dp"
-        android:text="3.  First player who score 30 points will win."
+        android:text="@string/instruction3"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="@dimen/default_scale"
         android:textStyle="bold" />
 
 </RelativeLayout>
+
