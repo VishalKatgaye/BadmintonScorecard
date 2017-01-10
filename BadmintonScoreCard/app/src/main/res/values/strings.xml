@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BadmintonScoreCard</string>
+    <string name="title">Badminton Singles Knokout</string>
+    <string name="first_player">Player A</string>
+    <string name="second_player">Player B</string>
+    <string name="score">+1Point</string>
+    <string name="initial_score">0</string>
+    <string name="no_result">-</string>
+    <string name="away">Away Point</string>
+    <string name="reset">Reset</string>
+    <string name="instruction_head">Instructions:</string>
+    <string name="instruction1">1.  First player with 11 points Win.</string>
+    <string name="instruction2">2.  When 10 all, need 2 consecutive points to win.</string>
+    <string name="instruction3">3.  First player who score 30 points will win.</string>
 </resources>
