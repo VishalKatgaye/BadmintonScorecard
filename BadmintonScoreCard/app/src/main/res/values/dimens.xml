@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="no_dim">0dp</dimen>
+    <dimen name="default_dim">16dp</dimen>
+    <dimen name="low_dim">8dp</dimen>
+    <dimen name="high_dim">40dp</dimen>
+    <dimen name="default_scale">16sp</dimen>
+    <dimen name="head_scale">24sp</dimen>
+    <dimen name="big_head_scale">32sp</dimen>
+</resources>
